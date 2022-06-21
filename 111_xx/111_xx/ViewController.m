@@ -22,6 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+}
+
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear: animated];
+    
+    [self display];
+    
+}
+
+
+
+- (void) display{
     [[ToolKit shared] useMemoryForApp];
     
     NSInteger total = [[ToolKit shared] totalMemoryForDevice];
@@ -29,10 +46,5 @@
     NSInteger limited = [[ToolKit shared] limitSizeOfMemory];
     
     NSLog(@"total %ld M, \n available %ld M , limited %ld M", total, available, limited);
-    
-    
 }
-
-
-
 @end
