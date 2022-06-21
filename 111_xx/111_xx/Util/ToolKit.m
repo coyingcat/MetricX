@@ -35,7 +35,7 @@ static ToolKit * kit = nil;
     {
         int64_t memoryUsageInByte = (int64_t) vmInfo.phys_footprint;
         NSInteger val = (NSInteger)(memoryUsageInByte/1024/1024);
-        NSLog(@"%ld M", val);
+        NSLog(@"%ld M occupied,", val);
     }
     else
     {

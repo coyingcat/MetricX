@@ -24,6 +24,13 @@
     // Do any additional setup after loading the view.
     [[ToolKit shared] useMemoryForApp];
     
+    NSInteger total = [[ToolKit shared] totalMemoryForDevice];
+    NSInteger available = [[ToolKit shared] availableSizeOfMemory];
+    NSInteger limited = [[ToolKit shared] limitSizeOfMemory];
+    
+    NSLog(@"total %ld M, \n available %ld M , limited %ld M", total, available, limited);
+    
+    
 }
 
 

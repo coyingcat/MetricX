@@ -16,6 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)useMemoryForApp;
 
+- (NSInteger)totalMemoryForDevice;
+
+- (NSInteger)availableSizeOfMemory;
+
+- (NSInteger)limitSizeOfMemory;
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
