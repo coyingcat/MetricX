@@ -74,9 +74,9 @@ static ToolKit * kit = nil;
         NSInteger limitMemory;
         if (totalMemory <= 1024) {
             limitMemory = totalMemory * 0.45;
-        } else if (totalMemory >= 1024 && totalMemory <= 2048) {
+        } else if (totalMemory <= 2048) {
             limitMemory = totalMemory * 0.45;
-        } else if (totalMemory >= 2048 && totalMemory <= 3072) {
+        } else if (totalMemory <= 3072) {
             limitMemory = totalMemory * 0.50;
         } else {
             limitMemory = totalMemory * 0.55;
